@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    var transient = (MyObject)ViewBag.transient;
+    var Scoped = (MyObject)ViewBag.scoped;
+    var Singleton = (MyObject)ViewBag.singleton;
+}
+
+<div class="text-center">
+    <b>Trasient 1 </b> @transient.Value
+    <b>Scoped 1 </b> @Scoped.Value
+    <b>Singleton 1 </b> @Singleton.Value
+</div>
